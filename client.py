@@ -33,7 +33,7 @@ payload_size = struct.calcsize(">L")
 msg = b""
 while True:
     # Delay screen capture to allow for more processing time.
-    for i in range(0,3): # Obtain a frame from the webcam.
+    for i in range(0,3):
         ret, frame = cam.read() # Get a frame from the webcam.
         
 	# encode the image.
