@@ -22,7 +22,7 @@ print('Socket now listening')
 conn,addr=s.accept()
 
 # Encoding the image.
-encode = [int(cv2.IMWRITE_JPEG_QUALITY), 90]\
+encode = [int(cv2.IMWRITE_JPEG_QUALITY), 90]
 # Calculates the number of bytes in the image.
 payload_size = struct.calcsize(">L")
 # Holds the bytes of the image.
